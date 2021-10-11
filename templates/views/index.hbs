@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel='icon' href='/img/weather.png'>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>{{message}}</p>
+        <p>Use this site to get your weather by entering your location. You can use city, state, zip, or your full address.</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <h2 id="message-1"></h2>
+        <img id="weather-icon">
+        <p id="message-2"></p>
+
+    </div>
+    <script src="/js/app.js"></script>
+    {{>footer}}
+</body>
+
+</html>
