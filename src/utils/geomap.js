@@ -6,7 +6,7 @@ const geoRequest = (location, callback) => {
 
     const geoURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?access_token=${geoToken}&limit=1`
 
-    request({ url: geoURL, json: true }, (error, { body: { message:errorMessage, features } }) => {
+    request({ url: geoURL, json: true }, (error, { body: { message:errorMessage, features } } = {}) => {
 
         if (error) {
             
